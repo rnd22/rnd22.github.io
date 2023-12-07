@@ -1,3 +1,5 @@
+/* Portfolio.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -5,10 +7,48 @@ body {
     color: #333; /* Setting default text color to a dark grey */
 }
 
-
 /* Styling for the main content section */
 article {
     padding-left: 2in; /* 2-inch left margin */
     padding-right: 2in; /* 2-inch right margin */
 }
 
+p {
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Styling for the project section */
+.project {
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 24px;
+    color: #000; /* Adjust the color as needed */
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Adjust the background color as needed */
+    color: #fff; /* Adjust the text color as needed */
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.project a:hover {
+    background-color: #0056b3; /* Adjust the hover background color as needed */
+}

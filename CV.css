@@ -7,6 +7,7 @@ body {
 
 /* Styling for the main content section */
 article {
+    overflow: auto; /* or overflow: scroll; */
     padding-left: 2in; /* 2-inch left margin */
     padding-right: 2in; /* 2-inch right margin */
 }

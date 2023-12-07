@@ -1,0 +1,70 @@
+/* Common styles for both mobile and desktop */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: cornflowerblue;
+    text-decoration: none;
+}
+
+article h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mobile styles - hide menu items and display menu button */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-button {
+        display: block;
+        margin-top: 10px; /* Adjust the spacing as needed */
+        cursor: pointer;
+        color: cornflowerblue;
+        font-size: 18px;
+    }
+
+    nav .menu-button::after {
+        content: '\2630'; /* Unicode character for hamburger icon */
+    }
+}
