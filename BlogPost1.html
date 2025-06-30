@@ -1,26 +1,106 @@
- <!-- Author Box -->
-  <!-- <section class="content">
-    <div class="author-box">
-      <div class="avatar">
-        <img src="ProfilePic.jpg" alt="El Kostelnik">
-      </div>
-      <div class="author-info">
-        <h5 class="author-title">Rachel Deahl Kostelnik</h5>
-        <p class="author-description">Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences. She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration.</p>
-        <a href="AboutMe.html" class="author-link">Read More</a>
-      </div>
-    </div>
-  </section> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracking Zooplankton – El the Ecologist</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="myHeader.css" />
+  <link rel="stylesheet" href="myFooter.css" />
+  <link rel="stylesheet" href="BlogPost1.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>El the Ecologist</h1>
+    <p class="subtitle">PhD Student & Computational Marine Ecologist</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="CurrentResearchProjects.html">Current Research Projects</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="CV.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Blog Content -->
+  <article class="single-post">
+    <h1>Tracking Zooplankton through the Water Column</h1>
+    <div class="post-meta">Published June 15, 2025 · By Rachel Deahl Kostelnik</div>
+
+    <p>Diel vertical migration (DVM) is one of the largest animal movements on Earth, and zooplankton play a key role in ocean ecosystems.</p>
+
+    <img src="zooplankton-net.jpg" alt="Zooplankton Net Deployment" />
+
+    <h2>Why It Matters</h2>
+    <p>These small creatures shape ocean carbon cycles and serve as prey for larger marine life, linking ocean layers and ecosystems.</p>
+
+    <blockquote>"Zooplankton may be small, but their impact is ocean-sized."</blockquote>
+
+  </article>
+
+  <div class="back-to-blog">
+  <a href="Blog.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+</div>
 
 
-
+  <!-- Author Box -->
   <section class="author-box">
-  <div class="author-info">
-    <h5 class="author-title">Rachel Deahl Kostelnik</h5>
-    <p class="author-description">Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences. She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration.</p>
-    <a href="AboutMe.html" class="author-link">Read More</a>
-  </div>
-  <div class="avatar">
-    <img src="ProfilePic.jpg" alt="El Kostelnik">
-  </div>
-</section>
+    <div class="author-info">
+      <h5 class="author-title">Rachel Deahl Kostelnik</h5>
+      <p class="author-description">
+        Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences. She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration.
+      </p>
+      <a href="AboutMe.html" class="author-link">Read More</a>
+    </div>
+    <div class="avatar">
+      <img src="ProfilePic.jpg" alt="Rachel Deahl Kostelnik">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/rachelnkostelnik/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/eltheecologist" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/el_the_ecologist/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@el_the_ecologist" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://medium.com/@el_the_ecologist" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+      <a href="https://github.com/rnd22" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank" aria-label="Substack"><i class="fas fa-envelope-open-text"></i></a>
+    </div>
+    <p>Created by Rachel Deahl Kostelnik © 2025</p>
+  </footer>
+
+  <!-- Scroll Fade Effect -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const scrollY = window.scrollY;
+      const maxScroll = 1000;
+      const fadeStrength = 0.8;
+      const opacity = Math.max(0, 1 - (scrollY / maxScroll) * fadeStrength);
+
+      document.body.style.backgroundColor = `rgba(255, 255, 255, ${1 - opacity})`;
+      document.body.style.backgroundImage = `linear-gradient(rgba(255,255,255,${1 - opacity}), rgba(255,255,255,${1 - opacity})), url('ocean.jpg')`;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundAttachment = 'scroll';
+      document.body.style.backgroundPosition = 'center center';
+    });
+  </script>
+
+</body>
+</html>

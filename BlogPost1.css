@@ -1,10 +1,204 @@
-<section class="author-box">
-  <div class="author-info">
-    <h5 class="author-title">Rachel Deahl Kostelnik</h5>
-    <p class="author-description">Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences. She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration.</p>
-    <a href="AboutMe.html" class="author-link">Read More</a>
-  </div>
-  <div class="avatar">
-    <img src="ProfilePic.jpg" alt="El Kostelnik">
-  </div>
-</section>
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Single Post Layout */
+.single-post {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #222;
+}
+
+/* Post Title */
+.single-post h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005f73;
+}
+
+/* Metadata */
+.single-post .post-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraphs */
+.single-post p {
+  margin-bottom: 1.25rem;
+}
+
+/* Images */
+.single-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  display: block;
+}
+
+/* Blockquotes */
+.single-post blockquote {
+  border-left: 4px solid #005f73;
+  padding-left: 1rem;
+  color: #444;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+/* Links */
+.single-post a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.single-post a:hover {
+  color: #005f73;
+}
+
+/* Headings inside post */
+.single-post h2,
+.single-post h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #0a9396;
+}
+
+/* Lists */
+.single-post ul,
+.single-post ol {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.single-post li {
+  margin-bottom: 0.5rem;
+}
+
+/* Author Box */
+.author-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.author-box .avatar {
+  flex-shrink: 0;
+}
+
+.author-box .avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #005f73;
+  margin-bottom: 0.5rem;
+}
+
+.author-description {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.author-link {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.author-link:hover {
+  background-color: #005f73;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .single-post {
+    padding: 1.25rem;
+    margin: 2rem 1rem;
+    font-size: 1.05rem;
+  }
+
+  .single-post h1 {
+    font-size: 1.6rem;
+  }
+
+  .author-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .author-box .avatar {
+    margin-bottom: 1rem;
+  }
+
+  .author-box .avatar img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.back-to-blog {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #f0f4f8;
+  color: #005f73;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #dceef4;
+  color: #003f4c;
+}
