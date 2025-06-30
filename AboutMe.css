@@ -1,23 +1,62 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #333; /* Setting default text color to a dark grey */
-    margin-bottom: 80px; /* Adjust the value to match the height of your footer */
+  background: url('ocean.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll; /* change from 'fixed' */
+  min-height: 100vh;
+  font-family: 'Source Serif Pro', serif;
+  color: #222;
+  line-height: 1.7;
+  padding: 0;
+  margin: 0;
+  
+}
+
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 /* Styling for the main content section */
-article {
-    padding-left: 2in; /* 2-inch left margin */
-    padding-right: 2in; /* 2-inch right margin */
+/* Content */
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+    font-family: 'Source Serif Pro', serif;
+
 }
 
+/* Links */
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005f73;
+}
 
 /* Styling for the profile picture and floated paragraphs */
 .profile {
     overflow: auto; /* Clear the float */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    max-width: 1300px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    font-size: 1.1rem;
 }
 
 .profile img {
@@ -26,25 +65,41 @@ article {
     border-radius: 50% 20% / 10% 40%;
     float: left; /* Float the image to the left */
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .profile .floated-paragraph {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: 16px;
     line-height: 1.6;
     color: #555;
+    
 }
 
 /* Styling for the section "What I'm Doing Now" */
 article h2.section-heading {
-    margin-bottom: 10px;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  font-size: 1.1rem;
 }
 
 p {
-    font-family: 'Times New Roman', serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+ 
+
+/* Links */
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005f73;
 }
 

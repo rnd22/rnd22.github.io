@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="myAuthorBox.css">
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="CurrentResearchProjects.css"> <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="CurrentResearchProjects.css"> 
 
 </head>
 <body>
@@ -34,14 +34,14 @@
     </nav>
 </header>
 <!-- Main content section -->
-<article>
-    <h2>Current Research Projects</h2>
+<div class="content">
+    <h2></h2>
     <p>
-        I completed my Masters at NJIT in May and started a PhD program in Marine Atmospheric and Sustainability Sciences at Stony Brook. 
-        Currently, I am an RA in the Warren Lab, beginning work on zooplankton identification from net tows and internal waves using EchoView.
-        
+        I am a PhD Student and Research Assistant in the Warren Acoustic Laboratory for Ecological Sciences, beginning work on zooplankton identification from net tows and using Echoview Hydroacoustics Software to look at internal waves and zooplankton migration. 
+        This field season I am maintaining our SWIFTs placed at Plover nesting sites along the South Shore of Long Island as well as our 
+         I am also beginning work on getting our Long-Term Underwater Acoustic Recorders ready for deployment at local artificial reefs as well as SNAPs at sites with known occurences of hypoxia to get a better understanding of fish abundance and behavior during hypoxic and normoxic conditions.
     </p>
-</article>
+</div>
 
 
 <!-- Footer -->
@@ -56,9 +56,27 @@
         <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
     </div>
     <p>
-        Created by Rachel Deahl Kostelnik 2023
+        Created by Rachel Deahl Kostelnik 2025
     </p>
 </footer>
+
+ <script>
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
+    const maxScroll = 1000; // 👈 fade happens over a longer scroll distance
+    const fadeStrength = 0.8; // 👈 max fade amount (0 = no fade, 1 = full white)
+
+    const opacity = Math.max(0, 1 - (scrollY / maxScroll) * fadeStrength);
+
+    document.body.style.backgroundColor = `rgba(255, 255, 255, ${1 - opacity})`;
+    document.body.style.backgroundImage = `linear-gradient(rgba(255,255,255,${1 - opacity}), rgba(255,255,255,${1 - opacity})), url('ocean.jpg')`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'scroll';
+    document.body.style.backgroundPosition = 'center center';
+  });
+</script>
+
 </body>
 </html>
 

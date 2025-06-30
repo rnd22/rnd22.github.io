@@ -37,10 +37,11 @@
 
 <!-- Main content section -->
 <article>
-    <h2>About Me</h2>
+    <h2></h2>
     <div class="profile">
         <img src="ProfilePic.jpg" alt="Profile Picture">
         <div class="floated-paragraph">
+                <h2>About Me</h2>
             <p>I'm a first year PhD student studying Marine Atmospheric and Sustainability Sciences at Stony Brook University. When I first began my Bachelors, I was a Computer Science major.
                 I took various courses from computer architecture to database system design & management.
                 While I love programming, I disliked the idea of software engineering. I wanted to do more with my skills and apply them in more unconventional ways.
@@ -55,13 +56,7 @@
                 I would love to utilize quantiative methods and GIS to learn more about the migratory patterns of marine life and how they are impacted by anthropogenic disturbances.</p>
             <p> I completed my Masters in Biology at New Jersey Institute of Technology, defending my thesis <i>The Potential for Automated Insect Classification Using Infrared Remote Sensing" </i> in May of 2024. </p>
         </div>
-    </div>
-
-
-
-
-
-    <p></p>
+        <p></p>
     <h2>What I'm Doing Now</h2>
     <p></p>
 
@@ -69,17 +64,21 @@
       You can find updates on my research as well as some personal projects here under the <a href="CurrentResearchProjects.html">Current Research Projects</a> tab!</p>
     <p>You can contact me at <strong>rachel.deahl@stonybrook.edu</strong> or find me on social media below!</p>
     
-  <!-- Ko-fi widget -->
-    <iframe
-        style="border:0; width:100%; height:400px;"
+    </div>
+
+    </div>
+
+
+</article>
+
+<!-- Ko-fi widget -->
+   <!-- <iframe
+        style="border: 5px;; width:100%; height:500px;"
         src="https://ko-fi.com/rachelkostelnik/?compact=true&hidefeed=true&widget=true&embed=true"
         title="Support me on Ko-fi"
         frameborder="0"
         scrolling="no">
-    </iframe>
-    </div>
-
-</article>
+    </iframe> -->
 
 <!-- Footer -->
 <footer>
@@ -93,12 +92,28 @@
         <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
     </div>
 
-
-
     <p>
-        Created by Rachel Deahl Kostelnik 2023
+        Created by Rachel Deahl Kostelnik 2025
     </p>
 </footer>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
+    const maxScroll = 300; // 👈 fade happens over a longer scroll distance
+    const fadeStrength = 0.9; // 👈 max fade amount (0 = no fade, 1 = full white)
+
+    const opacity = Math.max(0, 1 - (scrollY / maxScroll) * fadeStrength);
+
+    document.body.style.backgroundColor = `rgba(255, 255, 255, ${1 - opacity})`;
+    document.body.style.backgroundImage = `linear-gradient(rgba(255,255,255,${1 - opacity}), rgba(255,255,255,${1 - opacity})), url('ocean.jpg')`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'scroll';
+    document.body.style.backgroundPosition = 'center center';
+  });
+</script>
+
 </body>
 </html>
 

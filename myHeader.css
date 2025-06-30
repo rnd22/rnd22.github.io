@@ -1,54 +1,45 @@
+/* Header: Minimal Academic */
 header {
-    text-align: center;
-    padding: 20px 0; /* Adding vertical padding to create some space between header and content */
+  background: #ffffff;
+  color: #222;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  max-width: 100%;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0; /* Remove margin around the header */
+header h1 {
+  font-size: 2.5rem;
+  font-family: 'Source Serif Pro', serif;
+  margin-bottom: 0.25rem;
 }
 
-/* Adding styles for the subtitle */
 .subtitle {
-    font-family: 'Source Serif Pro', serif;
-    font-size: 16px;
-    color: #777; /* Setting subtitle color to a lighter grey */
-    margin: 0; /* Remove margin around the subtitle */
-
-}
-
-/* Adding styles for the navigation bar */
-nav {
-    margin-top: 20px; /* Adding some space between the subtitle and navigation bar */
-    text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  font-style: italic;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
 }
 
 nav a {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: cornflowerblue;
-    text-decoration: none;
+  color: #005f73;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
 }
 
-/* Styling for the heading */
-article h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+nav a:hover {
+  border-color: #0a9396;
 }
+

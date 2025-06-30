@@ -1,54 +1,70 @@
 /* Portfolio.css */
 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #333; /* Setting default text color to a dark grey */
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Source Serif Pro', serif;
+  color: #222;
+  line-height: 1.7;
+  padding: 0 0rem;
+  position: relative;
 }
 
-/* Styling for the main content section */
-article {
-    padding-left: 2in; /* 2-inch left margin */
-    padding-right: 2in; /* 2-inch right margin */
+/* .content wrapper for main layout */
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
 }
 
+/* General paragraph style */
 p {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Source Serif Pro', serif;
     font-size: 16px;
     line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
 }
 
-/* Styling for the project section */
+/* Project-specific overrides */
 .project {
     margin-bottom: 30px;
 }
 
 .project h3 {
     font-size: 24px;
-    color: #000; /* Adjust the color as needed */
+    color: #000;
     margin-bottom: 10px;
+    font-family: 'Source Serif Pro', serif;
+
 }
 
-.project p {
-    font-size: 18px;
-    line-height: 1.4;
-    color: #555;
-    margin-bottom: 15px;
-}
 
 .project a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007BFF; /* Adjust the background color as needed */
-    color: #fff; /* Adjust the text color as needed */
+    background-color: #007BFF;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Source Serif Pro', serif;
+
 }
 
 .project a:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+    background-color: #0056b3;
 }

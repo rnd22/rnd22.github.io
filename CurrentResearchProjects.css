@@ -1,21 +1,47 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #333; /* Setting default text color to a dark grey */
-}
 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Styling for the main content section */
-article {
-    padding-left: 2in; /* 2-inch left margin */
-    padding-right: 2in; /* 2-inch right margin */
+/* Content */
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+  font-family: 'Source Serif Pro', serif;
+
 }
 
-p {
-    font-family: 'Times New Roman', serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
+
+body {
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Source Serif Pro', serif;
+  color: #222;
+  line-height: 1.7;
+  padding: 0 0rem;
+  position: relative;
 }
+
+
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005f73;
+}
+
 

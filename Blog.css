@@ -1,6 +1,248 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #333; /* Setting default text color to a dark grey */
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Serif Pro', serif;
+  color: #222;
+  line-height: 1.7;
+  background-position: center -450px;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Layout */
+.blog-layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.blog-list {
+  flex: 2.5;
+}
+
+
+
+
+
+
+/* Main Content Card */
+.content {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* Blog Post Preview */
+  .post-preview {
+  margin-bottom: 1.8rem; /* was 2.5rem */
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.post-preview h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.post-preview h3 a {
+  color: #005f73;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.post-preview h3 a:hover {
+  color: #0a9396;
+}
+
+.post-preview .date {
+  display: inline-block;
+  background-color: #e0eef4;
+  color: #333;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+
+}
+
+.post-preview p {
+  margin-bottom: 0.5rem;
+}
+
+.post-preview a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  color: #0077cc;
+}
+
+a:hover {
+  color: #005f73;
+}
+
+/* Author Box Styles */
+
+.author-sidebar {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  align-self: stretch;
+}
+
+.author-box {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* evenly spaces avatar, name, bio, and button */
+  text-align: center;
+  padding: 2rem 1.5rem 1.5rem;
+
+}
+
+.author-box .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  margin-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+
+
+.author-box .avatar img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top; /* or center 25% for fine tuning */
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.author-name {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #005f73;
+  margin: 0;
+}
+
+.author-bio {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.author-button {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.author-button:hover {
+  background-color: #005f73;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .blog-layout {
+    flex-direction: column;
+  }
+
+  .author-sidebar {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .author-box {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .post-preview h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.author-social-links {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.author-social-links a {
+  color: #005f73;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.author-social-links a:hover {
+  color: #87bac6;
+}
+
+
+/*
+.author-box {
+  outline: 1px solid red;  debug outline 
+}
+
+.author-box .avatar {
+  outline: 1px dashed blue; debug image wrapper 
+}
+*/

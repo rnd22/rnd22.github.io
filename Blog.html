@@ -1,75 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El the Ecologist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="myHeader.css">
-    <link rel="stylesheet" href="myFooter.css">
-    <link rel="stylesheet" href="myAuthorBox.css">
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="Blog.css"> <!-- Your custom CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – El the Ecologist</title>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="myHeader.css" />
+  <link rel="stylesheet" href="myFooter.css" />
+  <link rel="stylesheet" href="myAuthorBox.css" />
+  <link rel="stylesheet" href="Blog.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-<header>
+
+  <!-- Header -->
+  <header>
     <h1>El the Ecologist</h1>
     <p class="subtitle">PhD Student & Computational Marine Ecologist</p>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutMe.html">About Me</a></li>
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="CurrentResearchProjects.html">Current Research Projects</a></li>
-            <li><a href="Portfolio.html">Portfolio</a></li>
-            <li><a href="CV.html">CV</a></li>
-            
-
-            <!-- Add more page titles here -->
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About Me</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="CurrentResearchProjects.html">Current Research Projects</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="CV.html">CV</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
+  <!-- Main Content -->
+  <main class="blog-layout">
+    <!-- Blog Post Previews -->
+    <section class="content blog-list">
+      <article class="post-preview">
+        <h3><a href="post1.html">Tracking Zooplankton: Insights from NYOS</a></h3>
+        <p class="date">June 15, 2025</p>
+        <p>Diving into diel vertical migration patterns using volumetric density data...</p>
+        <p><a href="post1.html">Read more →</a></p>
+      </article>
 
+      <hr />
 
+      <article class="post-preview">
+        <h3><a href="post2.html">Why Marine Microbes Might Be Mixing the Ocean</a></h3>
+        <p class="date">June 3, 2025</p>
+        <p>Could swimming plankton help drive ocean circulation?... </p>
+        <p><a href="post2.html">Read more →</a></p>
+      </article>
 
-<!-- Main content section -->
-<article>
-    <h2>Blog</h2>
-    <div class="author-box">
+      <hr />
+
+      <article class="post-preview">
+        <h3><a href="post3.html">From Code to Coral: Building Ecological Tools in R</a></h3>
+        <p class="date">May 20, 2025</p>
+        <p>Exploring how scripting in R transforms ecological data workflows...</p>
+        <p><a href="post3.html">Read more →</a></p>
+      </article>
+    </section>
+
+    <!-- Author Sidebar -->
+    <aside class="author-sidebar">
+      <section class="author-box card-style">
         <div class="avatar">
-            <img src="ProfilePic.jpg" alt="El Kostelnik">
+          <img src="ProfilePic.jpg" alt="El Kostelnik" />
         </div>
-        <div class="author-info">
-            <h5 class="author-title">Rachel Deahl Kostelnik</h5>
-            <p class="author-description">Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences.
-                She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration. </p>
-            <a href="AboutMe.html" class="author-link">Read More</a>
+        <div class="author-details">
+          <p class="author-name">Rachel Deahl Kostelnik</p>
+          <p class="author-bio">
+            Rachel is a Computational Marine Ecologist, pursuing her PhD in Marine Atmospheric and Sustainability Sciences. She's currently working as a research assistant in the Warren Lab at Stony Brook, studying internal waves and zooplankton migration.
+          </p>
+          <div class="author-social-links">
+  <a href="https://www.linkedin.com/in/rachelnkostelnik/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  <a href="https://twitter.com/eltheecologist" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/el_the_ecologist/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.tiktok.com/@el_the_ecologist" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+  <a href="https://medium.com/@el_the_ecologist" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+  <a href="https://github.com/rnd22" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank" aria-label="Substack"><i class="fas fa-envelope-open-text"></i></a>
+</div>
+
+          <a href="AboutMe.html" class="author-button">About Me</a>
         </div>
-    </div>
-</article>
+      </section>
+    </aside>
+  </main>
 
-
-<!-- Footer -->
-<footer>
+  <!-- Footer -->
+  <footer>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/rachelnkostelnik/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/eltheecologist" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/el_the_ecologist/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.tiktok.com/@el_the_ecologist" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://medium.com/@el_the_ecologist" target="_blank"><i class="fab fa-medium"></i></a>
-        <a href="https://github.com/rnd22" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+      <a href="https://www.linkedin.com/in/rachelnkostelnik/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/eltheecologist" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/el_the_ecologist/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@el_the_ecologist" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://medium.com/@el_the_ecologist" target="_blank" aria-label="Medium"><i class="fab fa-medium"></i></a>
+      <a href="https://github.com/rnd22" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank" aria-label="Substack"><i class="fas fa-envelope-open-text"></i></a>
     </div>
+    <p>Created by Rachel Deahl Kostelnik © 2025</p>
+  </footer>
 
-    <p>
-        Created by Rachel Deahl Kostelnik 2023
-    </p>
-</footer>
+  <!-- Scroll Fade Background -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const scrollY = window.scrollY;
+      const maxScroll = 1000;
+      const fadeStrength = 0.8;
+      const opacity = Math.max(0, 1 - (scrollY / maxScroll) * fadeStrength);
+
+      document.body.style.backgroundColor = `rgba(255, 255, 255, ${1 - opacity})`;
+      document.body.style.backgroundImage = `linear-gradient(rgba(255,255,255,${1 - opacity}), rgba(255,255,255,${1 - opacity})), url('ocean.jpg')`;
+      document.body.style.backgroundSize = 'cover';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundAttachment = 'scroll';
+      document.body.style.backgroundPosition = 'center center';
+    });
+  </script>
+
+  <script>
+  window.addEventListener('load', () => {
+    const main = document.querySelector('.blog-list');
+    const sidebar = document.querySelector('.author-box');
+    sidebar.style.minHeight = main.offsetHeight + 'px';
+  });
+</script>
+
+
 </body>
 </html>
-

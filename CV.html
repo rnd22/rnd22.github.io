@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El the Ecologist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="myHeader.css">
@@ -35,15 +35,15 @@
 </header>
 
 <!-- Main content section -->
-<article>
-    <h2>CV</h2>
+<div class="content">
+    <h2></h2>
     
     <iframe src="RachelDeahlCV.pdf" width="100%" height="600px">
         <p>It appears you don't have a PDF plugin for this browser.
             You can <a href="RachelDeahlCV.pdf" download>download the PDF file.</a>
         </p>
     </iframe>
-</article>
+</div>
 
 
 <!-- Footer -->
@@ -58,9 +58,27 @@
         <a href="https://substack.com/profile/38696693-el-kostelnik" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
     </div>
     <p>
-        Created by Rachel Deahl Kostelnik 2023
+        Created by Rachel Deahl Kostelnik 2025
     </p>
 </footer>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
+    const maxScroll = 300; // 👈 fade happens over a longer scroll distance
+    const fadeStrength = 0.9; // 👈 max fade amount (0 = no fade, 1 = full white)
+
+    const opacity = Math.max(0, 1 - (scrollY / maxScroll) * fadeStrength);
+
+    document.body.style.backgroundColor = `rgba(255, 255, 255, ${1 - opacity})`;
+    document.body.style.backgroundImage = `linear-gradient(rgba(255,255,255,${1 - opacity}), rgba(255,255,255,${1 - opacity})), url('ocean.jpg')`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'scroll';
+    document.body.style.backgroundPosition = 'center center';
+  });
+</script>
+
 </body>
 </html>
 
