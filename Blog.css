@@ -246,3 +246,17 @@ a:hover {
   outline: 1px dashed blue; debug image wrapper 
 }
 */
+
+.construction-banner {
+  max-width: 1200px;
+  margin: 2rem auto 1rem;
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
